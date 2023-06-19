@@ -1,0 +1,56 @@
+using System;
+using System.ComponentModel.Design;
+using System.Globalization;
+
+namespace PrimeiroAPP
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            char operador;
+            int resultado;
+
+            Console.WriteLine("Digite o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Agora, o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Digite a operação que deseja fazer");
+            Console.Write("(+) (-) (*) (/) (%)");
+            operador = char.Parse(Console.ReadLine());
+
+            switch (operador)
+            {
+                case '+':
+                    resultado = (num1 + num2);
+                    Console.WriteLine("O resultado da operação é : " + resultado);
+                    break;
+                case '-':
+                    resultado = (num1 - num2);
+                    Console.WriteLine("O resultado da operação é : " + resultado);
+                    break;
+                case '*':
+                    resultado = (num1 * num2);
+                    Console.WriteLine("O resultado da operação é : " + resultado);
+                    break;
+                case '/':
+                    resultado = (num1 / num2);
+                    Console.WriteLine("O resultado da operação é : " + resultado);
+                    break;
+                case '%':
+                    resultado = (num1 * (num2 / 100));
+                    Console.WriteLine(num1 + " % de " + num2 + " é " + resultado);
+                    break;
+        
+
+
+
+            }
+        } 
+    }
+}
