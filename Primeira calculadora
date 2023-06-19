@@ -46,8 +46,8 @@ namespace PrimeiroAPP
                     resultado = (num1 * (num2 / 100));
                     Console.WriteLine(num1 + " % de " + num2 + " é " + resultado);
                     break;
-        
-
+        default: Console.WriteLine("Comando inexistente!");
+                    break;
 
 
             }
